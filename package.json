@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrustalevdev/coding-challenges.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hrustalevdev/coding-challenges/issues"
+  },
+  "homepage": "https://github.com/hrustalevdev/coding-challenges#readme"
 }
