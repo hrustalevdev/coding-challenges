@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/hrustalevdev/coding-challenges/issues"
   },
-  "homepage": "https://github.com/hrustalevdev/coding-challenges#readme"
+  "homepage": "https://github.com/hrustalevdev/coding-challenges#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3"
+  }
 }
