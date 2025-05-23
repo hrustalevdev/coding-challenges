@@ -58,3 +58,46 @@ describe('Binary Search tests', () => {
     assert.strictEqual(binarySearch([1, 2], 3), -1);
   });
 });
+
+/*
+// BDD (Behavior-Driven Development) подход
+describe('WHEN "binarySearch" is called', () => {
+  // Позитивные кейсы
+  it('AND target is in the middle of array, MUST return correct index', () => {
+    assert.strictEqual(binarySearch([1, 3, 5, 7, 9], 5), 2);
+  });
+
+  it('AND target is at the beginning, MUST return index 0', () => {
+    assert.strictEqual(binarySearch([1, 3, 5, 7, 9], 1), 0);
+  });
+
+  it('AND target is at the end, MUST return last index', () => {
+    assert.strictEqual(binarySearch([1, 3, 5, 7, 9], 9), 4);
+  });
+
+  // Негативные кейсы
+  it('AND target is NOT in array, MUST return -1', () => {
+    assert.strictEqual(binarySearch([1, 3, 5, 7, 9], 4), -1);
+    assert.strictEqual(binarySearch([1, 3, 5, 7, 9], 10), -1);
+  });
+
+  // Пограничные случаи (edge cases)
+  it('AND array is empty, MUST return -1', () => {
+    assert.strictEqual(binarySearch([], 1), -1);
+  });
+
+  it('AND array has one element EQUAL to target, MUST return 0', () => {
+    assert.strictEqual(binarySearch([3], 3), 0);
+  });
+
+  it('AND array has one element NOT equal to target, MUST return -1', () => {
+    assert.strictEqual(binarySearch([3], 1), -1);
+  });
+
+  it('AND array has two elements, MUST return correct index or -1', () => {
+    assert.strictEqual(binarySearch([1, 2], 1), 0);
+    assert.strictEqual(binarySearch([1, 2], 2), 1);
+    assert.strictEqual(binarySearch([1, 2], 3), -1);
+  });
+});
+ */
