@@ -1,4 +1,4 @@
-import test from 'node:test';
+import { it, describe } from 'node:test';
 import assert from 'node:assert';
 
 function sum(a, b) {
@@ -6,8 +6,12 @@ function sum(a, b) {
 }
 
 /** TESTS */
-test('sum', () => {
-  assert(sum(1, 2), 3);
-  assert(sum(-1, -1), -2);
-  assert(sum(1.5, 2.5), 4);
+describe('Sum tests', () => {
+  it('should return the sum of two numbers', () => {
+    assert.strictEqual(sum(1, 2), 3);
+    assert.strictEqual(sum(-1, 1), 0);
+    assert.strictEqual(sum(0, 0), 0);
+    assert.strictEqual(sum(100, 200), 300);
+    assert.strictEqual(sum(-100, -200), -300);
+  });
 });
