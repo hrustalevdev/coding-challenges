@@ -1,7 +1,6 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
-import { selectionSortOptimized } from './selection-sort.js';
-import { selectionSort } from './selection-sort.js';
+import { selectionSort, selectionSortOptimized } from './selection-sort.js';
 
 const implementations = [
   { name: 'Selection Sort', fn: selectionSort },
