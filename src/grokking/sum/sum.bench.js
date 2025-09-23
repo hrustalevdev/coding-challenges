@@ -7,8 +7,6 @@ const largeArray = Array.from({ length: 10_000 }, () =>
   getRandomInt(-1000, 1000)
 );
 
-console.log(smallArray);
-
 const bench = new Bench();
 
 bench
