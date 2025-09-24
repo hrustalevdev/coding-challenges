@@ -1,13 +1,15 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
+import { quickSort } from './quick-sort.js';
 import { selectionSort, selectionSortOptimized } from './selection-sort.js';
 
 const implementations = [
   { name: 'Selection Sort', fn: selectionSort },
   { name: 'Selection Sort Optimized', fn: selectionSortOptimized },
+  { name: 'Quick Sort', fn: quickSort },
 ];
 
-describe('Selection Sort tests', () => {
+describe('Quick Sort tests', () => {
   implementations.forEach(({ name, fn }) => {
     describe(`WHEN ${name} is called`, () => {
       describe('AND an unsorted array is passed', () => {
